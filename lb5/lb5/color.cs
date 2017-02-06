@@ -8,15 +8,13 @@ using System.Threading.Tasks;
 namespace lb5
 {
    partial class Program
-    {                   
-
+    {
         public static void setColor()
         {
             bool go_on = true;
             while (go_on)
             {
                 //Console.Clear();
-                Console.WriteLine("Выберите цвет фигуры и нажмите нарисовать");
                 Console.WriteLine("**************************************************************");
                 Console.ForegroundColor=ConsoleColor.Blue;
                 Console.WriteLine("1 - цвет Blue");

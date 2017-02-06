@@ -66,7 +66,7 @@ namespace lb5
                             break;
                         case '6':
                             figure.printAll(color);
-                            //_getch();
+                            _getch();
                             break;
                         case '0':
                             go_on = false;

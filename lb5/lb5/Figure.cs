@@ -18,13 +18,15 @@ namespace lb5
 
         public override void printAll(colorDelegate color)
         {
+            Console.Clear();
             if (list.Count== 0)
             {
-                Console.WriteLine("Вы не добавили фигуры для отображения");
+                Console.WriteLine("Вы не добавили фигуры для отображения. Нажмите любую клавишу");
                 Thread.Sleep(2000);
             }
             for (int i = 0; i < list.Count; i++)
             {
+                Console.WriteLine($"Выберите цвет для {list[i].name}");
                 color();
                 //ConsoleColor color = ConsoleColor.Green;
                 //Console.ForegroundColor = color; 
@@ -32,6 +34,10 @@ namespace lb5
                 list[i].print();
                 Console.WriteLine();
                 Console.ResetColor();
+                if (i == list.Count-1)
+                {
+                    Console.WriteLine("Фигуры отображены. Нажмите любую клавишу");
+                }
             }
         }
 
