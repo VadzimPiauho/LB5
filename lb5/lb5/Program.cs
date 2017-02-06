@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace lb5
 {
-    public delegate void colorDelegate(ref bool go_on);
+    public delegate void colorDelegate();
 
     partial class Program
     {
@@ -42,31 +42,31 @@ namespace lb5
                         case '1':
                             figure.list.Add(new rectangle());
                             Console.WriteLine("Прямоугольник добавлен");
-                            _getch();
+                            Thread.Sleep(1000);
                             break;
                         case '2':
                             figure.list.Add(new diamond());
                             Console.WriteLine("ромб добавлен");
-                            _getch();
+                            Thread.Sleep(1000);
                             break;
                         case '3':
                             figure.list.Add(new triangle());
                             Console.WriteLine("треугольник добавлен");
-                            _getch();
+                            Thread.Sleep(1000);
                             break;
                         case '4':
                             figure.list.Add(new trapezoid());
                             Console.WriteLine("трапеция добавлена");
-                            _getch();
+                            Thread.Sleep(1000);
                             break;
                         case '5':
                             figure.list.Add(new polygon());
                             Console.WriteLine("многоугольник добавлен");
-                            _getch();
+                            Thread.Sleep(1000);
                             break;
                         case '6':
-                            figure.print();
-                            _getch();
+                            figure.printAll(color);
+                            //_getch();
                             break;
                         case '0':
                             go_on = false;

@@ -8,46 +8,46 @@ using System.Threading.Tasks;
 namespace lb5
 {
    partial class Program
-    {
-        
+    {                   
 
-        public static void setColor(ref bool go_on)
+        public static void setColor()
         {
+            bool go_on = true;
             while (go_on)
             {
-                Console.Clear();
-                Console.WriteLine("Выберите цвет фигуры");
+                //Console.Clear();
+                Console.WriteLine("Выберите цвет фигуры и нажмите нарисовать");
                 Console.WriteLine("**************************************************************");
-                Console.WriteLine("1 - получение объема памяти");
-                Console.WriteLine("2 - копирование данных (файлов/папок) на устройство");
-                Console.WriteLine("3 - получение информации о свободном объеме памяти на устройстве");
-                Console.WriteLine("4 - получение общей/полной информации об устройстве");
-                Console.WriteLine("0 - Выход из программы");
+                Console.ForegroundColor=ConsoleColor.Blue;
+                Console.WriteLine("1 - цвет Blue");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("2 - цвет Cyan");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("3 - цвет Red");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("4 - цвет Yellow");
                 Console.WriteLine("**************************************************************");
 
                 switch (_getch())
                 {
                     case '1':
-                      
-                        _getch();
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        //_getch();
+                        go_on = false;
                         break;
                     case '2':
-                       
-                        _getch();
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        //_getch();
+                        go_on = false;
                         break;
                     case '3':
-                      
-                        _getch();
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        //_getch();
+                        go_on = false;
                         break;
                     case '4':
-                        
-                        _getch();
-                        break;
-                    case '5':
-
-                        _getch();
-                        break;
-                    case '0':
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        //_getch();
                         go_on = false;
                         break;
                     default:
