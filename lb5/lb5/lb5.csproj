@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="baseclass.cs" />
+    <Compile Include="color.cs" />
     <Compile Include="diamond.cs" />
+    <Compile Include="Figure.cs" />
     <Compile Include="polygon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

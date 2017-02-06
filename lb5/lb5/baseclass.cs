@@ -8,14 +8,17 @@ namespace lb5
 {
    abstract class baseclass
     {
-        public string name { get; set; }
+        public string name { get; set; }       
 
         public baseclass(string name)
         {
             this.name = name;
         }
-
         public abstract void print();
+        public virtual void printAll(colorDelegate color)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+        }
 
     }
 }

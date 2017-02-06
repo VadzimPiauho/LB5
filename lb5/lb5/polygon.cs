@@ -14,7 +14,7 @@ namespace lb5
 
         public override void print()
         {
-            throw new NotImplementedException();
+            Console.Write($"  *****\n *******\n*********\n*********\n*********\n*********\n *******\n  *****");
         }
     }
 }
